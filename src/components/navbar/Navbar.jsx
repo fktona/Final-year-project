@@ -25,7 +25,7 @@ const Navbar = ({setOpenMenu}) => {
   setLoading(true)
   try{
 
-    const res = await fetch(`${baseUrl}/send_exp/user.`, {
+    const res = await fetch(`${baseUrl}/send_exp/${user.uid}`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
